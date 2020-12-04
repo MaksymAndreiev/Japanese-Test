@@ -1,0 +1,33 @@
+@startuml
+class StartClass {
+    frame
+    - pointToLocate
+
+    - JPanel panel0;
+    - JPanel panel1;
+
+    - JPanel panel2;
+
+    - JPanel panel3;
+    - JLabel moraLabel;
+    - JTextField answerField;
+
+    - JPanel panel4;
+    - JRadioButton radioButton1;
+    - JRadioButton radioButton2;
+    - JRadioButton radioButton3;
+    - JRadioButton radioButton4;
+
+    - JPanel panel5;
+    - JLabel results;
+
+
+    - Player player;
+    - Alphabet alphabet;
+    - Run run;
+    - int countOfMatches;
+    - int retries;
+
+}
+
+@enduml

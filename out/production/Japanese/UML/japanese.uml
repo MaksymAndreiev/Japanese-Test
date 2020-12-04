@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>japanese</OriginalElement>
+  <nodes>
+    <node x="155.0" y="809.0">japanese.Run</node>
+    <node x="332.0" y="47.0">japanese.StartClass.TextWritten</node>
+    <node x="770.0" y="0.0">japanese.StartClass.ReturnToMenuButtonListener</node>
+    <node x="358.0" y="1016.0">japanese.Player</node>
+    <node x="616.0" y="970.0">japanese.StartClass.StartClicked</node>
+    <node x="1088.0" y="317.0">japanese.StartClass.ContinueTestListener</node>
+    <node x="609.0" y="130.0">japanese.StartClass</node>
+    <node x="0.0" y="328.0">japanese.Alphabet</node>
+    <node x="146.0" y="668.0">japanese.StartClass.AlphabetClicked</node>
+    <node x="1043.0" y="759.0">japanese.StartClass.ButtonSelected</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="japanese.StartClass.TextWritten" target="japanese.StartClass">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="japanese.Run" target="japanese.Alphabet">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.StartClass.ButtonSelected">
+      <point x="0.0" y="-5.833877200640139" />
+      <point x="9.70474846231241" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.Player">
+      <point x="4.589860442790979" y="1.9832249281668997" />
+      <point x="4.589860442790979" y="1.9832249281669192" />
+    </edge>
+    <edge source="japanese.StartClass.StartClicked" target="japanese.Run">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.StartClass.AlphabetClicked">
+      <point x="0.0" y="5.442612383079643" />
+      <point x="12.657882234439626" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.StartClass.TextWritten">
+      <point x="0.0" y="19.30482753257731" />
+      <point x="-11.690744718052414" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass.StartClicked" target="japanese.StartClass">
+      <point x="-4.9983006808851655" y="0.13034685827784642" />
+      <point x="-4.9983006808851655" y="0.1303468582778482" />
+    </edge>
+    <edge source="japanese.Run" target="japanese.Player">
+      <point x="4.196819841879062" y="-2.7178490051528" />
+      <point x="4.196819841879076" y="-2.717849005152857" />
+    </edge>
+    <edge source="japanese.StartClass.AlphabetClicked" target="japanese.StartClass">
+      <point x="-37.97364670331899" y="0.0" />
+      <point x="0.0" y="-16.327837149238917" />
+    </edge>
+    <edge source="japanese.StartClass.ButtonSelected" target="japanese.StartClass">
+      <point x="-2.5760585240395812" y="4.285314746984511" />
+      <point x="-2.576058524039553" y="4.285314746984531" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.StartClass.StartClicked">
+      <point x="5.001699896848294" y="0.0" />
+      <point x="5.001699896848265" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass.ReturnToMenuButtonListener" target="japanese.StartClass">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass.ContinueTestListener" target="japanese.StartClass">
+      <point x="29.096355394492434" y="0.0" />
+      <point x="0.0" y="10.648666149530744" />
+    </edge>
+    <edge source="japanese.StartClass.StartClicked" target="japanese.Player">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.Run">
+      <point x="3.416023556550556" y="3.6511344895924847" />
+      <point x="3.416023556550556" y="3.6511344895924935" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.StartClass.ContinueTestListener">
+      <point x="0.0" y="-10.648666149530749" />
+      <point x="-29.096355394492548" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.StartClass.ReturnToMenuButtonListener">
+      <point x="0.0" y="-29.673618522983862" />
+      <point x="-10.621295204384523" y="0.0" />
+    </edge>
+    <edge source="japanese.StartClass" target="japanese.Alphabet">
+      <point x="-0.36089829320863487" y="4.986958233428378" />
+      <point x="-0.36089829320860645" y="4.986958233428382" />
+    </edge>
+    <edge source="japanese.StartClass.AlphabetClicked" target="japanese.Alphabet">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="0.5308352849336456" x="635.5" y="630.5" />
+  <SelectedNodes>
+    <node>japanese.Run</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
