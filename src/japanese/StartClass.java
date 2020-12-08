@@ -6,10 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -45,7 +41,7 @@ public class StartClass {
     private int countOfMatches;
     private int retries;
     private int countOfReturn = 0;
-    private boolean firstTime;
+    private final boolean firstTime;
     private boolean noFont;
 
     public static void main(String[] args) {
