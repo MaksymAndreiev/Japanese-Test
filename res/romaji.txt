@@ -1,29 +1,29 @@
 a i u e o
 va vi vu ve vo
-vya   vyu vye vyo
+vya null vyu vye vyo
 ka ki ku ke ko
-kya   kyu   kyo
+kya null kyu null kyo
 ga gi gu ge go
-gya   gyu   gyo
+gya null gyu null gyo
 sa shi su se so
-sha   shu she sho
+sha null shu she sho
 za ji zu ze zo
-ja   ju je jo
+ja null ju je jo
 ta chi tsu te to
 cha ti chu che cho
 da dzi dzu de do
-dya di dyu   dyo
+dya di dyu null dyo
 na ni nu ne no
-nya   nyu   nyo
+nya null nyu null nyo
 ha hi fu he ho
-hya   hyu   hyo
+hya null hyu null hyo
 ba bi bu be bo
-bya   byu   byo
+bya null byu null byo
 pa pi pu pe po
-pya   pyu   pyo
+pya null pyu null pyo
 ma mi mu me mo
-mya   myu   myo
-ya    yu    yo
+mya null myu null myo
+ya null yu null yo
 ra ri ru re ro
-rya   ryu   ryo
-wa    n     wo
+rya null ryu null ryo
+wa null n null wo

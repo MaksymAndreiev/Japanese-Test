@@ -1,11 +1,13 @@
 package japanese;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Player {
     private final String path = "player_results.dat";
-    private boolean isNewPlayer;
+    private final boolean isNewPlayer;
     private HashMap<String, int[]> results = new HashMap<>(2);
 
     Player(boolean isNewPlayer) {
@@ -24,7 +26,7 @@ public class Player {
         if (isNewPlayer) {
             try (ObjectOutputStream outputStream = new ObjectOutputStream(
                     new FileOutputStream(path))) {
-                int countOfMoras = 46;
+                int countOfMoras = getCountofMoras();
                 int[] resultsArray = new int[countOfMoras];
                 results.put("hiragana", resultsArray);
                 results.put("katakana", resultsArray);
@@ -56,5 +58,17 @@ public class Player {
 
     public HashMap<String, int[]> getResults() {
         return results;
+    }
+
+    public int getCountofMoras(){
+        String rmjPath = "/romaji.txt";
+        InputStream rmjStream = getClass().getResourceAsStream(rmjPath);
+        final ArrayList<String> romaji = new ArrayList<>();
+        Scanner scForRmj = new Scanner(rmjStream, "UTF-8");
+        while (scForRmj.hasNext()) {
+            romaji.add(scForRmj.next()); //те саме
+        }
+        scForRmj.close();
+        return romaji.size();
     }
 }

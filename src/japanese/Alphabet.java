@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Alphabet {
-    private String alphabetName; //змінна, що відповідає за один з двох алфавітів японської
+    private final String alphabetName; //змінна, що відповідає за один з двох алфавітів японської
     private String currentMora; //та мора (слог) алфавіту, яку треба відгадати (яп)
     private String guessingMora; //та мора, яку задає користувач, коли відгадує (лат)
-    private ArrayList<String> mora = new ArrayList<>(); //масив для всіх мор одного з алфавіту
+    private final ArrayList<String> mora = new ArrayList<>(); //масив для всіх мор одного з алфавіту
     private final ArrayList<String> romaji = new ArrayList<>(); //масив ромаджі (латинізація японської)
-    private HashMap<String, String> moraMap = new HashMap<>(); //словник {мора:ромаджі}
+    private final HashMap<String, String> moraMap = new HashMap<>(); //словник {мора:ромаджі}
 
     Alphabet(String alphabetName) {
         this.alphabetName = alphabetName;
@@ -57,6 +57,10 @@ public class Alphabet {
         return mora.get(index);
     }
 
+    /*public int getCountOfMoras(){
+        return mora.size();
+    }*/
+
     //вигружає алфавіт, вказаний в конструкторі, з файлу, робить словник типу {мора:ромаджі}
     public ArrayList<String> loadAlphabet() {
         //шлях до мор одного з алфавітів
@@ -81,7 +85,9 @@ public class Alphabet {
         scForRmj.close();
 
         for (int i = 0; i < mora.size(); i++) {
-            moraMap.put(mora.get(i), romaji.get(i)); //робить словник з відповідних мор японською та латиницею
+            if (!mora.get(i).equals("null")||!romaji.get(i).equals("null")) {
+                moraMap.put(mora.get(i), romaji.get(i)); //робить словник з відповідних мор японською та латиницею
+            }
         }
         return mora;
     }

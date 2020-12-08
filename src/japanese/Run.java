@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Run {
-    private Player player;
+    private final Player player;
 
     Run(Player player) {
         this.player = player;
@@ -24,8 +24,8 @@ public class Run {
                 attempt = alphabet.getMoraByIndex(index + 1);
             }
             counter++;
-            //усього 46 мор, якщо лічильник більше 46, то всі мори були вгадані і+1 та більше разів
-            if (counter > 46) {
+            //усього getCountofMoras() мор, якщо лічильник більше getCountofMoras(), то всі мори були вгадані і+1 та більше разів
+            if (counter > player.getCountofMoras()) {
                 i++; //тепер шукаємо тільки ті, що були вгадані і(після і++) раз. Якщо всі були вгадані більше 1 разу,
                 // то все продовжується до нескінченності, поки не буде, що хоча б одна мора була вгадана і раз,
                 // коли всі інші і+1
@@ -52,16 +52,16 @@ public class Run {
                 posElement.put(i, alphabet.getRomajiByIndex(indexOfCurrentMora));
             } else { //інші позиції заповнюються неправильними варіантами
                 //випадок коли рандом видає ту саму мору, котра є відповіддю
-                String romaji = alphabet.getRomajiByIndex(random.nextInt(46));
+                String romaji = alphabet.getRomajiByIndex(random.nextInt(player.getCountofMoras()));
 
                 //якщо випадковий варіант неправильної відповіді є правильним
                 if (romaji.equals(alphabet.getRomajiByIndex(indexOfCurrentMora))) {
                     flagOfSmthIsWrong = true;
                     //вибір нового варіанту
-                    if (indexOfCurrentMora + pos < 46) {
+                    if (indexOfCurrentMora + pos < player.getCountofMoras()) {
                         posElement.put(i, alphabet.getRomajiByIndex(indexOfCurrentMora + pos));
                     } else {
-                        int newPosition = indexOfCurrentMora + pos - 46;
+                        int newPosition = indexOfCurrentMora + pos - player.getCountofMoras();
                         posElement.put(i, alphabet.getRomajiByIndex(newPosition));
                     }
                 }
@@ -72,16 +72,16 @@ public class Run {
                         flagOfSmthIsWrong = true;
                         //завжди є перевірка щоб будь-який новий індекс не співпадал з правильним
                         int index = alphabet.getIndexOfRomaji(posElement.get(j));
-                        if (index + pos < 46 && index + pos != indexOfCurrentMora) {
+                        if (index + pos < player.getCountofMoras() && index + pos != indexOfCurrentMora) {
                             posElement.put(i, alphabet.getRomajiByIndex(index + pos));
                         } else {
                             int newPosition;
                             if (index + pos > 45) {
-                                newPosition = index + pos - 46;
+                                newPosition = index + pos - player.getCountofMoras();
                             } else {
-                                newPosition = index + pos + random.nextInt(46 - index - pos);
+                                newPosition = index + pos + random.nextInt(player.getCountofMoras() - index - pos);
                                 if (newPosition > 45) {
-                                    newPosition = newPosition - 46;
+                                    newPosition = newPosition - player.getCountofMoras();
                                 }
                             }
                             if (newPosition != indexOfCurrentMora) {

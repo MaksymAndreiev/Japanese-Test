@@ -1,29 +1,29 @@
 あ　い　う　え　お
 ゔぁ　ゔぃ　ゔ　ゔぇ　ゔぉ
-ゔゃ　　　ゔゅ　　　ゔょ
+ゔゃ null ゔゅ null ゔょ
 か　き　く　け　こ
-きゃ　　　きゅ　　　きょ
+きゃ null きゅ　null　きょ
 が　ぎ　ぐ　げ　ご
-ぎゃ　　　ぎゅ　　　ぎょ
+ぎゃ　null　ぎゅ　null　ぎょ
 さ　し　す　せ　そ
-しゃ　　　しゅ　null　しょ
+しゃ　null　しゅ　null　しょ
 ざ　じ　ず　ぜ　ぞ
-じゃ　　　じゅ　じぇ　じょ
+じゃ　null　じゅ　じぇ　じょ
 た　ち　つ　て　と
 ちゃ　null　ちゅ　null　ちょ
 だ　ぢ　づ　で　ど
-ぢゃ　null　ぢゅ　　　ぢょ　
+ぢゃ　null　ぢゅ　null　ぢょ　
 な　に　ぬ　ね　の
-にゃ　　　にゅ　　　にょ
+にゃ　null　にゅ　null　にょ
 は　ひ　ふ　へ　ほ
-ひゃ　　　ひゅ　　　ひょ
+ひゃ　null　ひゅ　null　ひょ
 ば　び　ぶ　べ　ぼ
-びょ　　　びゅ　　　びょ
+びょ　null　びゅ　null　びょ
 ぱ　ぴ　ぷ　ぺ　ぽ
-ぴゃ　　　ぴゅ　　　ぴょ
+ぴゃ　null　ぴゅ　null　ぴょ
 ま　み　む　め　も
-みゃ　　　みゅ　　　みょ
-や　　　ゆ　　　よ
+みゃ　null　みゅ　null　みょ
+や　null　ゆ　null　よ
 ら　り　る　れ　ろ
-りゃ　　　りゅ　　　りょ
-わ　 　ん　 　を　
+りゃ　null　りゅ　null　りょ
+わ　null　ん　null　を　
