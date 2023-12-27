@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Japanese:jar">
-    <output-path>$PROJECT_DIR$/res</output-path>
-    <root id="archive" name="Japanese.jar">
-      <element id="module-output" name="Japanese" />
-    </root>
-  </artifact>
-</component>
